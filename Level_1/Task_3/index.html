@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Calculator</title>
+    <style>/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2c3e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+    background: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    font-size: 2em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background: #bdc3c7;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 6px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+button[data-action="clear"] {
+    background: #e74c3c;
+}
+
+button[data-action="clear"]:hover {
+    background: #c0392b;
+}
+
+button[data-action="backspace"] {
+    background: #f39c12;
+}
+
+button[data-action="backspace"]:hover {
+    background: #d35400;
+}
+
+button[data-action="="] {
+    grid-column: span 1;
+    background: #27ae60;
+}
+
+button[data-action="="]:hover {
+    background: #219150;
+}
+
+button:nth-last-child(2) {
+    grid-column: span 2; /* Make '0' span two columns for better layout */
+}
+</style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <button data-action="clear">C</button>
+            <button data-action="backspace">⌫</button>
+            <button data-action="/">÷</button>
+            <button data-action="*">×</button>
+
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-action="-">−</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-action="+">+</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-action="=">=</button>
+
+            <button>0</button>
+            <button>.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+  </html>
