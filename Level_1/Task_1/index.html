@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shritam Kumar - Portfolio</title>
+    <style>/* styles.css */
+
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(44, 62, 80, 0.08);
+}
+
+nav {
+    background: #34495e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1em;
+    transition: background 0.2s;
+}
+
+nav ul li a:hover {
+    background: #2980b9;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.09);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    color: #2980b9;
+    margin-bottom: 0.7rem;
+}
+
+ul {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 0.8em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #3498db;
+}
+
+#formResponse {
+    margin-top: 1rem;
+    color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 0 0 8px 8px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Shritam Kumar</h1>
+        <p>2nd Year Student, ECE Branch</p>
+        <p>Noida Institute of Engineering and Technology</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Shritam Kumar, a passionate Electronics and Communication Engineering student currently in my second year at NIET Noida.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Electronics Fundamentals</li>
+                <li>Basic Programming (C, Python)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+
+                <li>Personal Portfolio Website</li>
+                                <li>Landing Page</li>
+                                                <li>Calculator</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="formResponse"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Shritam Kumar. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+  </html>
